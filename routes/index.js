@@ -5,7 +5,16 @@ const story = require('../data/story.json')
 
 router.get('/', function (req, res) {
   console.log(story.parts[0])
-  res.render('index.njk', { title: 'Welcome', part: story.parts[0] })
+  res.render('index.njk', { 
+    username: req.session.username || "mupp",
+    title: 'Welcome', 
+    part: story.parts[0] })
+})
+
+router.post('/username', function (req, res) {
+  req.session.username = req.body.username
+  console.log(req.session.username)
+  res.redirect('/')
 })
 
 router.get('/story/:id', function (req, res) {

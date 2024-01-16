@@ -3,43 +3,118 @@
     {
       "id": 0,
       "name": "Part 1",
-      "text": "This is part 1",
+      "text": "You discover a mysterious time machine. Excited and curious, you decide to activate it.",
       "options": [
-        {
-          "id": 0,
-          "text": "This takes you to part 2",
-          "target": 1
-        },
-        {
-          "id": 1,
-          "text": "This takes you to part 3",
-          "target": 2
-        }
+        {"id": 0, "text": "Travel to the future", "target": 1},
+        {"id": 1, "text": "Travel to the past", "target": 2}
       ]
     },
     {
       "id": 1,
       "name": "Part 2",
-      "text": "This is part 2",
+      "text": "You find yourself in a bustling futuristic city. Advanced technology and flying cars fill the sky.",
       "options": [
-        {
-          "id": 2,
-          "text": "Go back to start",
-          "target": 0
-        }
+        {"id": 2, "text": "Explore the city's advancements", "target": 3},
+        {"id": 3, "text": "Return to the time machine", "target": 0}
       ]
     },
     {
       "id": 2,
       "name": "Part 3",
-      "text": "This is part 3",
+      "text": "You are now in ancient Egypt. The pyramids are being constructed, and people are going about their daily lives.",
       "options": [
-        {
-          "id": 4,
-          "text": "Go back to part 2",
-          "target": 1
-        }
+        {"id": 4, "text": "Interact with the locals", "target": 4},
+        {"id": 5, "text": "Study the architectural wonders", "target": 3}
       ]
+    },
+    {
+      "id": 3,
+      "name": "Part 4",
+      "text": "While exploring the futuristic city, you discover a hidden laboratory with advanced gadgets.",
+      "options": [
+        {"id": 6, "text": "Investigate the laboratory", "target": 5},
+        {"id": 7, "text": "Continue exploring the city", "target": 1}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Part 5",
+      "text": "As you interact with the locals in ancient Egypt, you're mistaken for a deity. They invite you to a grand feast.",
+      "options": [
+        {"id": 8, "text": "Join the feast", "target": 6},
+        {"id": 9, "text": "Decline and explore further", "target": 4}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Part 6",
+      "text": "In the laboratory, you find a device that allows you to control time. What do you want to do?",
+      "options": [
+        {"id": 10, "text": "Experiment with time control", "target": 7},
+        {"id": 11, "text": "Leave the laboratory", "target": 3}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Part 7",
+      "text": "The feast in ancient Egypt is extravagant. The locals worship you. What's your next move?",
+      "options": [
+        {"id": 12, "text": "Reveal your true identity", "target": 8},
+        {"id": 13, "text": "Enjoy the worship without revealing", "target": 4}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Part 8",
+      "text": "Experimenting with time control goes wrong, creating a temporal anomaly. You're stuck between different eras.",
+      "options": [
+        {"id": 14, "text": "Try to fix the anomaly", "target": 9},
+        {"id": 15, "text": "Embrace the chaos and explore", "target": 12}
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Part 9",
+      "text": "Revealing your true identity in ancient Egypt sparks a mix of awe and fear. The locals build a temple in your honor.",
+      "options": [
+        {"id": 16, "text": "Accept their worship and stay", "target": 10}
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Part 10",
+      "text": "Attempting to fix the anomaly proves challenging. You need to make a decision.",
+      "options": [
+        {"id": 18, "text": "Seek help from the futuristic city's scientists", "target": 11}
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Part 11",
+      "text": "The scientists in the futuristic city offer assistance. Together, you manage to stabilize the temporal anomaly.",
+      "options": [
+        {"id": 20, "text": "Express gratitude and explore more", "target": 13}
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Part 12",
+      "text": "You explore more of the futuristic city, discovering advanced art and entertainment. It's a utopia.",
+      "options": [
+        {"id": 22, "text": "Immerse yourself in the city's culture", "target": 13}
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Good Ending",
+      "text": "Embracing the futuristic city's culture, you become an ambassador of peace and progress. Your time-traveling adventures end with a positive impact on civilizations.",
+      "options": []
+    },
+    {
+      "id": 13,
+      "name": "Bad Ending",
+      "text": "Unable to control the time anomaly, you're forever lost in a chaotic mix of eras. Your journey becomes an endless struggle against the unpredictable forces of time.",
+      "options": []
     }
   ]
 }
