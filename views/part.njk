@@ -7,6 +7,7 @@
     {% if part.image %}
     <img src="/img/{{part.image}}" alt="{{part.name}}">
     {% endif %}
+
     <p>{{part.text}}</p>
     <ul>
       {% for option in part.options %}
