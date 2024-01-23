@@ -3,6 +3,18 @@ const router = express.Router()
 
 const story = require('../data/story.json')
 
+const pool = require('../db')
+
+router.get('/dbtest', async function (req, res) {
+  try {
+    const [parts] = await pool.promise().query('SELECT * FROM samuel_part')
+    res.json({ parts })
+  } catch (error) {
+    console.log(error)
+    res.sendStatus(500)
+  }
+})
+
 router.get('/', function (req, res) {
   console.log(story.parts[0])
   res.render('index.njk', { 
