@@ -8,7 +8,8 @@ const pool = require('../db')
 router.get('/dbtest', async function (req, res) {
   try {
     const [parts] = await pool.promise().query('SELECT * FROM samuel_part')
-    res.json({ parts })
+    const [options] = await pool.promise().query('SELECT * FROM samuel_part')
+    res.json({ parts, options })
   } catch (error) {
     console.log(error)
     res.sendStatus(500)
